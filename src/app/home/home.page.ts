@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+
+  startMyEvent() {
+    console.log('MY EVENT WORKS');
+  }
 }

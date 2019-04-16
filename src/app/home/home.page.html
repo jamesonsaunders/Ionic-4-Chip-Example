@@ -1,14 +1,73 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Ionic 4 Chip
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+
+    <p>Learn more from Jami at <a href="https://jamibot.com" target="_blank">jamibot.com</a></p>
+
+    <ion-chip>
+      Default
+    </ion-chip>
+
+    <ion-chip>
+      <ion-label>In label</ion-label>
+    </ion-chip>
+    
+    <ion-chip>
+      <ion-label color="secondary">Secondary Label</ion-label>
+    </ion-chip>
+    
+    <ion-chip color="secondary">
+      <ion-label color="dark">Secondary w/ Dark label</ion-label>
+    </ion-chip>
+    
+    <ion-chip>
+      <ion-icon name="pin"></ion-icon>
+      <ion-label>Default</ion-label>
+    </ion-chip>
+    
+    <ion-chip>
+      <ion-icon name="heart" color="dark"></ion-icon>
+      <ion-label>Default</ion-label>
+    </ion-chip>
+    
+    <ion-chip>
+      <ion-label>Button Chip</ion-label>
+      <ion-icon name="close-circle"></ion-icon>
+    </ion-chip>
+    
+    <ion-chip>
+      <ion-icon name="pin" color="primary"></ion-icon>
+      <ion-label>Icon Chip</ion-label>
+      <ion-icon name="close"></ion-icon>
+    </ion-chip>
+    
+    <ion-chip>
+      <ion-avatar>
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label>Avatar Chip</ion-label>
+      <ion-icon name="close-circle"></ion-icon>
+    </ion-chip>
+
+    <ion-chip outline>Outline</ion-chip>
+
+    <ion-chip mode="ios">IOS</ion-chip>
+    <ion-chip mode="md">MD</ion-chip>
+
+    <ion-chip outline (click)="startMyEvent()">My Event</ion-chip>
+
+    <ion-chip outline>
+      <ion-label>My Event 2</ion-label>
+      <ion-icon name="close" (click)="startMyEvent()"></ion-icon>
+    </ion-chip>
+
+
   </div>
 </ion-content>
