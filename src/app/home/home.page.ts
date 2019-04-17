@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  fruits = ['apple', 'banana', 'cherry', 'dragon fruit', 'elderberry', 'fig', 'guava'];
 
   startMyEvent() {
     console.log('MY EVENT WORKS');
+  }
+
+  removeFruit(index) {
+    this.fruits.splice(index, 1);
   }
 }

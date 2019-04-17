@@ -68,6 +68,12 @@
       <ion-icon name="close" (click)="startMyEvent()"></ion-icon>
     </ion-chip>
 
+    <p>Click X to remove</p>
+    <ion-chip *ngFor="let fruit of fruits; let i = index">
+      <ion-label>{{fruit}}</ion-label>
+      <ion-icon name="close" (click)="removeFruit(i)"></ion-icon>
+    </ion-chip>
+
 
   </div>
 </ion-content>
